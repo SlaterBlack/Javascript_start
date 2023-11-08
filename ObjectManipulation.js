@@ -1,8 +1,8 @@
 // basic address layout
 const address = {
-    street = '27 Hollyvale Street',
-    city = 'Mistatuji',
-    zipCode = '1232'
+    street: '27 Hollyvale Street',
+    city:'Mistatuji',
+    zipCode: '1232'
 }
 
 //initialise address as factory function
