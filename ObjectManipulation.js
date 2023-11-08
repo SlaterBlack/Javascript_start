@@ -38,3 +38,39 @@ function showAddress(address){
     for(key in address)
         console.log(key, address[key])
 };
+
+
+// Create a Blog psot that includes:
+//  Title
+//  Body
+//  Author
+//  Views
+//  Comment (author and body)
+//  isLive
+
+let post = {
+    title: 'title',
+    body: 'Body',
+    author: 'author',
+    views: 0,
+    comments:[{author:'a',body:'b'},{author:'a',body:'b'}],
+    isLive: true
+};
+
+function Post(title,body,author){
+    this.title = title;
+    this.body = body;
+    this.author = author;
+    this.views = 0
+    this.comments = []
+    this.isLive = false
+}
+
+let priceRanges = [
+    {label: '$', tooltip: 'Inexpensive', minPerPerson: 0, maxPerPerson: 10},
+    {label: '$', tooltip: 'Inexpensive', minPerPerson: 11, maxPerPerson: 20},
+    {label: '$', tooltip: 'Inexpensive', minPerPerson: 21, maxPerPerson: 50}
+];
+let restaurants = [
+    {averagePerPerson: 5}
+]
