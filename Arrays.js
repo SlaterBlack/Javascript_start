@@ -79,13 +79,13 @@
          max = number;
    }
    return max
- }
+ };
      
   //   Alternative way to obtain the biggest number in an array
   function altGetMax (array){
    if (array.length === 0) return undefined
    array.reduce((a,b) => (a > b) ? a : b);
- }
+ };
 
  //   Take movies and only show movies with a certain minimum rating whithin a certain year, display only the titles of the filtered movies in reverse rating order
  const movies = [
@@ -93,13 +93,13 @@
    {title: 'b', year: 2018, rating: 4.7 },
    {title: 'c', year: 2018, rating: 3},
    {title: 'd', year: 2017, rating: 4.5 },
- ]
+ ];
 
  function sortMovies(array,searchYear,searchMinRating){
    array
    .filter(m => m.searchYear === 2018 && m.rating >= searchMinRating)
    .sort((a,b) => a.rating - b.rating)
    .reverse()
-   .map(m => m.title)
+   .map(m => m.title);
  };
 
