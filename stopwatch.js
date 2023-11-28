@@ -1,7 +1,7 @@
 function Stopwatch(){
     let startTime, endTime, running, duration = 0;
 
-    this.start = functio(){
+    this.start = function(){
         if (running)
             new Error ('The Clock is already stopped');
         running = true;
@@ -24,4 +24,4 @@ function Stopwatch(){
         running = false;
         duration = 0;
     };
-}
+};

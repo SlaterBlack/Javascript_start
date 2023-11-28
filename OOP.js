@@ -45,7 +45,7 @@ function AbstractionAddress(street,city,zipCode){
         //...
     };
 
-    this.draw = function{
+    this.draw = function(){
         let x, y;
         //  this.street
         computeRoute(0.1);
