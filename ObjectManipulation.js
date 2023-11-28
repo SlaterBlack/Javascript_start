@@ -14,7 +14,7 @@ function factoryAddress(street,city,zipCode){
     };
 }
 
-//initialise address with constructor function
+//initialise address with constructor function (requires 'new when called)
 function Address(street,city,zipCode){
     this.street = street;
     this.city = city;
